@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
        binding.cvTextFields.setOnClickListener {
             startActivity(TextFieldsActivity.createIntent(this))
        }
+
+       binding.cvSnackBar.setOnClickListener {
+            startActivity(SnackbarActivity.createIntent(this))
+       }
     }
 }
