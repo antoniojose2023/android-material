@@ -16,7 +16,6 @@ class SnackbarActivity : AppCompatActivity() {
 
         listener()
 
-
     }
 
     private fun listener() {
