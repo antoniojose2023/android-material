@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
        binding.cvBottomSheets.setOnClickListener {
             val modalSheet = BottonSheetDialog()
             modalSheet.show(supportFragmentManager, BottonSheetDialog.TAG)
-        }
+       }
+
+       binding.cvTopAppBar.setOnClickListener {
+            startActivity(TopToolbarActivity.createIntent(this))
+       }
+
     }
 }
